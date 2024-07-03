@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
 
 export const Login: FC = () => {
-  return <>login</>;
+  return (
+    <div className="login">login</div>
+  )
 };
