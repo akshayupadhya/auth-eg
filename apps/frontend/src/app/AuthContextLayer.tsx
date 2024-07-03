@@ -1,7 +1,10 @@
 import { createContext, useEffect, useState } from 'react';
 import { redirect, useNavigate } from 'react-router-dom';
 
-type iAuth = { token: string | undefined; setToken: (token: string) => void };
+type iAuth = {
+  token: string | undefined;
+  setToken: (token: string | undefined) => void;
+};
 const initialAuthValue: iAuth = { token: undefined, setToken: (token) => {} };
 
 export const AuthContext = createContext<iAuth>(initialAuthValue);
